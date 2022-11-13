@@ -1,0 +1,344 @@
+:root {
+  --color-very-dark-magenta: hsl(300, 43%, 22%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* Resetting Browser Styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 1180px;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--color-white);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+}
+
+.container {
+  width: 410px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 100vh;
+    width: 1080px;
+  }
+}
+
+/* Heading & Sub Heading  */
+
+@media screen and (min-width: 1024px) {
+  .first-text_and_reviews {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: 100px 0 0 0;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin: 60px 80px 0 80px;
+  font-size: 1.8rem;
+  color: var(--color-very-dark-magenta);
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    margin: 0;
+    text-align: left;
+    font-size: 2.8rem;
+    width: 300px;
+  }
+}
+
+.description {
+  margin: 20px 70px 0 70px;
+  text-align: center;
+  line-height: 18px;
+  color: var(--color-dark-grayish-magenta);
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    font-size: 1.1rem;
+    margin: 25px 0 0 0;
+    width: 400px;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+
+/* Website reviews & stars */
+
+.reviews {
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  background-color: var(--color-light-grayish-magenta);
+  width: 250px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .review {
+    display: flex;
+    width: 400px;
+    height: 50px;
+    margin-left: 200px;
+  }
+}
+
+.review-star {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .review-star {
+    padding: 18px 0 0 25px;
+  }
+}
+
+.star-icon {
+  width: 13px;
+  height: 13px;
+}
+
+@media screen and (min-width: 1024px) {
+  .star-icon {
+    margin-left: 2.5px;
+  }
+}
+
+.review-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+@media screen and (min-width: 1024px) {
+  .review-text {
+    padding: 19px 0 0 35px;
+  }
+}
+
+.review-text p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-very-dark-magenta);
+}
+
+.review-2,
+.review-3 {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .review-2 {
+    margin-left: 240px;
+  }
+
+  .review-3 {
+    margin-left: 280px;
+  }
+}
+
+/* Comment & Card Section */
+
+.comment-card-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .comment-card-container {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .comment-card {
+    display: flex;
+    width: 1080px;
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  background-color: var(--color-very-dark-magenta);
+  width: 250px;
+  height: 195px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 340px;
+    height: 220px;
+    margin: 0 0 0 0;
+  }
+}
+
+.card-2,
+.card-3 {
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-2 {
+    margin-top: 20px;
+  }
+
+  .card-3 {
+    margin-top: 40px;
+  }
+}
+
+.image-info {
+  padding: 30px 0 0 30px;
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .image-info {
+    padding: 40px 0 0 40px;
+  }
+}
+
+.card-image {
+  border-radius: 100px;
+  width: 33px;
+  height: 33px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.card-text {
+  padding-left: 15px;
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-text div {
+    display: block;
+  }
+}
+
+.name {
+  font-size: 0.9rem;
+  padding-top: 3px;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .name {
+    width: 100px;
+    font-size: 1rem;
+  }
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding-top: 2px;
+  color: var(--color-soft-pink);
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  .tag {
+    font-size: 0.9rem;
+  }
+}
+
+.comment {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--color-white);
+  font-weight: normal;
+  padding: 15px 30px 0 30px;
+  line-height: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .comment {
+    font-size: 0.9rem;
+    line-height: 20px;
+    padding: 15px 45px 0 40px;
+  }
+}
+
+/* Attribution Section */
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    transform: scale(1.4);
+  }
+}
+
+.attribution {
+  color: darkblue;
+}
+
+.attribution a {
+  color: rgb(255, 152, 9);
+}
+
+/* For Tablets*/
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  body {
+    height: 2790px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    margin-top: 840px;
+    transform: scale(2.5);
+    height: 1180px;
+  }
+
+  footer {
+    bottom: 0;
+    transform: scale(2);
+  }
+}
